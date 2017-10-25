@@ -1,0 +1,14 @@
+version: '2'
+services:
+    vsmartapi-app:
+        image: vsmartapi
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://vsmartapi-postgresql:5432/VsmartApi
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    vsmartapi-postgresql:
+        extends:
+            file: postgresql.yml
+            service: vsmartapi-postgresql
