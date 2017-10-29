@@ -19,7 +19,7 @@ spring:
         include: swagger
     devtools:
         restart:
-            enabled: true
+            enabled: false
         livereload:
             enabled: false # we use gulp + BrowserSync for livereload
     jackson:
@@ -72,7 +72,7 @@ liquibase:
 #        keyAlias: VsmartApi
 # ===================================================================
 server:
-    port: 8080
+    port: 8761
 
 # ===================================================================
 # JHipster specific properties
