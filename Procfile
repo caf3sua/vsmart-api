@@ -1,1 +1,1 @@
-java $JAVA_OPTS -jar -Dspring.profiles.active=prod target/vsmart-api-0.0.1-SNAPSHOT.war
+web: java $JAVA_OPTS -jar -Dspring.profiles.active=prod target/vsmart-api-0.0.1-SNAPSHOT.war
