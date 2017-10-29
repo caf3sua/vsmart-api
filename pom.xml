@@ -16,6 +16,7 @@
     <name>Vsmart Api</name>
 
     <properties>
+    	<full-artifact-name>target/${project.artifactId}-${project.version}.war</full-artifact-name>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx256m</argLine>
         <assertj.version>3.6.2</assertj.version>
         <awaitility.version>2.0.0</awaitility.version>
@@ -529,6 +530,22 @@
                     </resources>
                 </configuration>
             </plugin>
+            <plugin>
+			      <groupId>com.heroku.sdk</groupId>
+			      <artifactId>heroku-maven-plugin</artifactId>
+			      <version>1.2.1</version>
+			      <configuration>
+			          <appName>v-smart api</appName>
+			          <includeTarget>false</includeTarget>
+			          <includes>
+			              <include>${basedir}/${full-artifact-name}</include>
+			          </includes>
+			          <jdkVersion>1.8</jdkVersion>
+			          <processTypes>
+			              <web>java $JAVA_OPTS -jar -Dspring.profiles.active=dev ${full-artifact-name}</web>
+			          </processTypes>
+			      </configuration>
+		  	</plugin>
             <!-- jhipster-needle-maven-add-plugin -->
         </plugins>
         <pluginManagement>
