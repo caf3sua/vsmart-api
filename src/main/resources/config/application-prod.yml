@@ -14,6 +14,8 @@
 # ===================================================================
 
 spring:
+    profiles:
+        include: swagger
     devtools:
         restart:
             enabled: false
