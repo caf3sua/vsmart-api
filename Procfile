@@ -1,0 +1,1 @@
+java $JAVA_OPTS -jar -Dspring.profiles.active=prod ${full-artifact-name}
