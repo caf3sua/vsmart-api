@@ -535,7 +535,7 @@
 			      <artifactId>heroku-maven-plugin</artifactId>
 			      <version>1.2.1</version>
 			      <configuration>
-			          <appName>v-smart api</appName>
+			          <appName>sleepy-woodland-43849</appName>
 			          <includeTarget>false</includeTarget>
 			          <includes>
 			              <include>${basedir}/${full-artifact-name}</include>
