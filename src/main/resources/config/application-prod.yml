@@ -79,7 +79,7 @@ liquibase:
 #        keyAlias: VsmartApi
 # ===================================================================
 server:
-    port: ${PORT:8080}
+    port: ${PORT:80}
     compression:
         enabled: true
         mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
