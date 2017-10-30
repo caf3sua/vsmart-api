@@ -1,0 +1,9 @@
+{"lstKpiGnoc":[
+		{"totalWoA":"1","totalWoB":"2","totalWoC":"3","totalWoD":"4","totalWoE":"5","totalWoF":"6","rateWoIncoming":"12","rateWoOver":"9","pointWoIncoming":"11","pointWoOver":"10","totalPointWo":"8","pointKpiWo":"7","startTime":"2016-03-02 09:35:43.0","finishTime":"2016-03-02 09:35:43.0"}
+		, {"totalWoA":"1","totalWoB":"2","totalWoC":"3","totalWoD":"4","totalWoE":"5","totalWoF":"6","rateWoIncoming":"12","rateWoOver":"9","pointWoIncoming":"11","pointWoOver":"10","totalPointWo":"8","pointKpiWo":"7","startTime":"2016-03-03 09:35:43.0","finishTime":"2016-03-02 09:35:43.0"}
+		, {"totalWoA":"1","totalWoB":"2","totalWoC":"3","totalWoD":"4","totalWoE":"5","totalWoF":"6","rateWoIncoming":"12","rateWoOver":"9","pointWoIncoming":"11","pointWoOver":"10","totalPointWo":"8","pointKpiWo":"7","startTime":"2016-03-04 09:35:43.0","finishTime":"2016-03-02 09:35:43.0"}
+		, {"totalWoA":"1","totalWoB":"2","totalWoC":"3","totalWoD":"4","totalWoE":"5","totalWoF":"6","rateWoIncoming":"12","rateWoOver":"9","pointWoIncoming":"11","pointWoOver":"10","totalPointWo":"8","pointKpiWo":"7","startTime":"2016-03-05 09:35:43.0","finishTime":"2016-03-02 09:35:43.0"}
+		, {"totalWoA":"1","totalWoB":"2","totalWoC":"3","totalWoD":"4","totalWoE":"5","totalWoF":"6","rateWoIncoming":"12","rateWoOver":"9","pointWoIncoming":"11","pointWoOver":"10","totalPointWo":"8","pointKpiWo":"7","startTime":"2016-03-06 09:35:43.0","finishTime":"2016-03-02 09:35:43.0"}
+		, {"totalWoA":"1","totalWoB":"2","totalWoC":"3","totalWoD":"4","totalWoE":"5","totalWoF":"6","rateWoIncoming":"12","rateWoOver":"9","pointWoIncoming":"11","pointWoOver":"10","totalPointWo":"8","pointKpiWo":"7","startTime":"2016-03-07 09:35:43.0","finishTime":"2016-03-02 09:35:43.0"}
+	]
+} 
