@@ -81,16 +81,16 @@ jhipster:
     mail:
         from: VsmartApi@localhost
     swagger:
-        default-include-pattern: /api/.*
-        title: VsmartApi API
-        description: VsmartApi API documentation
+        default-include-pattern: /api/rest/.*
+        title: Vsmart REST API
+        description: REST API documentation for Vsmart-iOS Project 
         version: 0.0.1
-        terms-of-service-url:
-        contact-name:
+        terms-of-service-url: https://vsmart-api.herokuapp.com/
+        contact-name: Nam Nguyen Hoai
         contact-url:
-        contact-email:
-        license:
-        license-url:
+        contact-email: namnh@itsol.vn
+        license: Apache License Version 2.0
+        license-url: https://www.apache.org/licenses/LICENSE-2.0
     ribbon:
         display-on-active-profiles: dev
 
