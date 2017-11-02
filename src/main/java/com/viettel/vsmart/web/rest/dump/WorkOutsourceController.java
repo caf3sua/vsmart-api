@@ -19,7 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.viettel.vsmart.web.rest.dump.util.LoadJsonDumpData;
 
 /**
- *
+ * 6015: Quản lý công việc phát sinh
  * @author ThanhPT18
  */
 @RestController
@@ -61,7 +61,8 @@ public class WorkOutsourceController {
             @RequestParam("token") String token) {
         
         
-        return null;
+    		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_WO, "workOutsourceController_createOrUpdateArising");
+        return data;
     }
 
     @RequestMapping(value = "/destroyArising", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
@@ -70,8 +71,8 @@ public class WorkOutsourceController {
             @RequestParam("userAssignId") Long userAssignId,
             @RequestParam("workOutsourceId") Long workOutsourceId,
             @RequestParam("token") String token) {
-        JSONObject jsonObject = new JSONObject();
-        return jsonObject.toString();
+    		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_WO, "workOutsourceController_destroyArising");
+        return data;
     }
 
     @RequestMapping(value = "/searchArising", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
@@ -84,8 +85,7 @@ public class WorkOutsourceController {
             @RequestParam("limit") Long limit,
             @RequestParam("workOutsourceId") Long workOutsourceId,
             @RequestParam("token") String token) {
-        JSONObject jsonObject = new JSONObject();
-        
-        return jsonObject.toString();
+    		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_WO, "workOutsourceController_searchArising");
+        return data;
     }
 }

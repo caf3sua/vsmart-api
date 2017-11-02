@@ -36,4 +36,15 @@ public class DVCDController {
 	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "dvcdController_getInfoAccountFromBccs");
 	    	return data;
     }
+    
+    //Lay danh sach cong viec cua nhan vien
+    // 6001:Báo cáo công việc
+    @RequestMapping(value = "/getListTaskStaff", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String getListTaskStaff(HttpServletRequest req, @RequestParam("userId") Long userId,
+            @RequestParam("staffName") String staffName,
+            @RequestParam("token") String token) {
+	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "dvcdController_getListTaskStaff");
+	    	return data;
+    }
 }

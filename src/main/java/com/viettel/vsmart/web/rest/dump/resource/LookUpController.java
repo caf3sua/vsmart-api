@@ -46,4 +46,19 @@ public class LookUpController {
 	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpController_getListStation");
 	    	return data;
     }
+    
+    // Tien ich : 6016:Tra cứu mã lỗi
+    @RequestMapping(value = "/lookupErrorCode", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String lookupErrorCode(HttpServletRequest req,
+            @RequestParam("userAssignId") Long userAssignId,
+            @RequestParam("errorCode") String errorCode,
+            @RequestParam("errorDescription") String errorDescription,
+            @RequestParam("errorName") String errorName,
+            @RequestParam("supportMobile") String supportMobile,
+            @RequestParam("supportUser") String supportUser,
+            @RequestParam("systemCode") String systemCode) {
+	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpController_lookupErrorCode");
+	    	return data;
+    }
 }

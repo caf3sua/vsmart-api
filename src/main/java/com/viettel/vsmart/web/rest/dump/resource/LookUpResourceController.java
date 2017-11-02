@@ -78,4 +78,18 @@ public class LookUpResourceController {
 	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpResourceController_lookupConnectNodeAccount");
 	    	return data;
     }
+    
+    @RequestMapping(value = "/getAssetInStation", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String getAssetInStation(HttpServletRequest req,
+            @RequestParam("userId") Long userId,
+            @RequestParam("serialNumber") String serialNumber,
+            @RequestParam("merName") String merName,
+            @RequestParam("stationCode") String stationCode,
+            @RequestParam("countRows") Integer countRows,
+            @RequestParam("pageIndex") Integer pageIndex,
+            @RequestParam("token") String token) {
+	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpResourceController_getAssetInStation");
+	    	return data;
+    }
 }

@@ -25,8 +25,6 @@ public class NocProController {
 
     private Logger log = Logger.getLogger(NocProController.class);
 
-    //R528867_hunght7_end
-    //598829_phucng_start
     @RequestMapping(value = "/onExecuteMapQuery", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
     public @ResponseBody
     String onExecuteMapQuery(HttpServletRequest req,
@@ -41,5 +39,15 @@ public class NocProController {
     		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_WO, "nocProController_onExecuteMapQuery");
         return data;
     }
-    //598829_phucng_end
+    
+    @RequestMapping(value = "/onSearchPowerViba", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String onSearchPowerViba(HttpServletRequest req,
+            @RequestParam("token") String token,
+            @RequestParam("requestId") long requestId,
+            @RequestParam("stationCode") String stationCode,
+            @RequestParam("userAssignId") Long userAssignId) {
+    		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_WO, "nocProController_onSearchPowerViba");
+        return data;
+    }
 }
