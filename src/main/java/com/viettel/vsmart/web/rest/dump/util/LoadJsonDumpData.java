@@ -28,6 +28,8 @@ public class LoadJsonDumpData {
     public static final  String MODULE_WO = "wo";
     public static final  String MODULE_SEARCH_KPI = "search_kpi";
     public static final  String MODULE_OTHER = "other";
+    public static final  String MODULE_RESOURCE = "resource";
+    public static final  String MODULE_UTILITY = "utility";
     
     public static String getGetJsonData(String module,
             String fileName) {

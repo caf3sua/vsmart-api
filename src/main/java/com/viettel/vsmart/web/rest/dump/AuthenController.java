@@ -69,8 +69,8 @@ public class AuthenController {
     String checkVsaCodien(HttpServletRequest req,
             @RequestParam("username") String username,
             @RequestParam("password") String pwd) {
-    	JSONObject jsonObject = new JSONObject();
-        return jsonObject.toString();
+    		String data = "{\"result\":\"Username hoặc password của bạn chưa đúng\"}";
+    		return data;
     }
     //hungnd40_Rcodien_end
 
