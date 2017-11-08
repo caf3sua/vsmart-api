@@ -60,8 +60,52 @@ public class LookUpResourceController {
             @RequestParam("countRows") Integer countRows,
             @RequestParam("pageIndex") Integer pageIndex,
             @RequestParam("token") String token) {
-	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpResourceController_getDeviceInfo");
+    		// Người dùng chọn loại tìm kiếm là thiết bị    	
+    		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpResourceController_getDeviceInfo");
 	    	return data;
+    }
+    
+    @RequestMapping(value = "/getPeripheralPortInfo", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String getPeripheralPortInfo(HttpServletRequest req,
+            @RequestParam("userAssignId") Long userAssignId,
+            @RequestParam("peripheralType") Long peripheralType,
+            @RequestParam("stationCode") String stationCode,
+            @RequestParam("countRows") Integer countRows,
+            @RequestParam("pageIndex") Integer pageIndex,
+            @RequestParam("token") String token) {
+    	    // token = 40b49e91-11be-47cf-9ba1-ca6550e00826, userAssignId = 33311, stationCode = hcm, countRows = 10, pageIndex = 0;peripheralType=[1 đến 4]
+    		// "Người dùng chọn loại tìm kiếm khác thiết bị.
+		//    	+ Ngoại vi đồng: 1
+		//    	+ Ngoại vi đồng trục: 2
+		//    	+ Ngoại vi quang: 3
+		//    	+ Ngoại vi GPON: 4"
+	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpResourceController_getPeripheralPortInfo");
+	    	return data;
+    }
+    
+    @RequestMapping(value = "/getListPort", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String getListPort(HttpServletRequest req,
+            @RequestParam("userAssignId") Long userAssignId,
+            @RequestParam("id") Long id,
+            @RequestParam("type") Long type,//type=1 thiet bi, 2 ngoai vi
+            @RequestParam("peripheralType") Long peripheralType,//loai ngoai vi
+            @RequestParam("token") String token) {
+    		// "Thiết bị: id:8363;peripheralType:;token:;userAssignId:33311;type:1
+    		// "Ngoại vi: id:93522;peripheralType:2;token:;userAssignId:33311;type:2"
+    		if (type == 1) {
+    			String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpResourceController_getListPort_1");
+    	    		return data;
+    		} else {
+			//    			"peripheralType: 
+			//    			+ Ngoại vi đồng: 1
+			//    			+ Ngoại vi đồng trục: 2
+			//    			+ Ngoại vi quang: 3
+			//    			+ Ngoại vi GPON: 4"
+    			String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpResourceController_getListPort_2");
+    			return data;
+    		}
     }
     
     
