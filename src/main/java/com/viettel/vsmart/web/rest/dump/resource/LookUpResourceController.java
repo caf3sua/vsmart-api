@@ -108,6 +108,20 @@ public class LookUpResourceController {
     		}
     }
     
+    //</editor-fold>
+    //<editor-fold defaultstate="collapsed" desc="Method getAssetHistory: Tra cuu thong tin lich su tai san tai tram">
+    //Create by: hunght7
+    //Create date: 08072016
+    @RequestMapping(value = "/getAssetHistory", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String getAssetHistory(HttpServletRequest req,
+            @RequestParam("userId") Long userId,
+            @RequestParam("merEntityId") Long merEntityId,
+            @RequestParam("token") String token) {
+    		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "lookUpResourceController_getAssetHistory");
+		return data;
+    }
+    
     
     @RequestMapping(value = "/lookupConnectNodeAccount", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
     public @ResponseBody
