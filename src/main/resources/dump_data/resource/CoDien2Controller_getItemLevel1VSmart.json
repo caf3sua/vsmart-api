@@ -1,0 +1,493 @@
+{  
+   "getItemLevel1VSmartResult":{  
+      "listItemLevel1":[  
+         {  
+            "deleteable":1,
+            "itemId":1,
+            "itemLabel":"Lưới điện",
+            "moreInstance":0,
+            "order":1,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":2,
+            "itemLabel":"Tủ nguồn AC",
+            "moreInstance":1,
+            "order":2,
+                        "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+            
+         },
+         {  
+            "deleteable":1,
+            "itemId":3,
+            "itemLabel":"Tủ nguồn DC",
+            "moreInstance":1,
+            "order":3,
+                        "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+            
+         },
+         {  
+            "deleteable":1,
+            "itemId":4,
+            "itemLabel":"Điều hòa",
+            "moreInstance":1,
+            "order":4,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":0,
+            "itemId":5,
+            "itemLabel":"Máy phát điện",
+            "moreInstance":1,
+            "order":5,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":6,
+            "itemLabel":"Ăc quy",
+            "moreInstance":1,
+            "order":6,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":7,
+            "itemLabel":"Ôn áp",
+            "moreInstance":1,
+            "order":7,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":8,
+            "itemLabel":"Bình cứu hỏa",
+            "moreInstance":1,
+            "order":8,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":9,
+            "itemLabel":"Hệ thống cảnh báo",
+            "moreInstance":1,
+            "order":9,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":10,
+            "itemLabel":"ATS/ATS Timer/GSDK",
+            "moreInstance":1,
+            "order":10,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":11,
+            "itemLabel":"Nhà máy nổ",
+            "moreInstance":1,
+            "order":11,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":12,
+            "itemLabel":"Bộ cắt lọc sét",
+            "moreInstance":1,
+            "order":12,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":13,
+            "itemLabel":"Pin mặt trời",
+            "moreInstance":1,
+            "order":13,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":14,
+            "itemLabel":"Hệ thống tiếp địa",
+            "moreInstance":1,
+            "order":14,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":15,
+            "itemLabel":"Công tơ máy phát điện",
+            "moreInstance":1,
+            "order":15,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":16,
+            "itemLabel":"Camera giám sát",
+            "moreInstance":1,
+            "order":16,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":1,
+            "itemId":17,
+            "itemLabel":"Thiết bị thông gió",
+            "moreInstance":1,
+            "order":17,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":0,
+            "itemId":18,
+            "itemLabel":"Thiết bị IP",
+            "moreInstance":1,
+            "order":18,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":0,
+            "itemId":19,
+            "itemLabel":"Thiết bị PSTN",
+            "moreInstance":1,
+            "order":19,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":0,
+            "itemId":20,
+            "itemLabel":"Thiết bị CDBR",
+            "moreInstance":1,
+            "order":20,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":0,
+            "itemId":21,
+            "itemLabel":"Thiết bị truyền hình",
+            "moreInstance":1,
+            "order":21,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":0,
+            "itemId":22,
+            "itemLabel":"Thiết bị truyền dẫn",
+            "moreInstance":1,
+            "order":22,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         },
+         {  
+            "deleteable":0,
+            "itemId":23,
+            "itemLabel":"Thiết bị vô tuyến",
+            "moreInstance":1,
+            "order":23,
+            "listIns" : [
+            		{
+            			"id" : "1",
+            			"itemId" : "10",
+            			"name" : "Dump1",
+            			"stationId" : "1"
+            		},
+            		{
+            			"id" : "2",
+            			"itemId" : "20",
+            			"name" : "Dump2",
+            			"stationId" : "2"
+            		},
+            ]
+         }
+      ],
+      "message":"OK",
+      "result":"OK"
+   }
+}

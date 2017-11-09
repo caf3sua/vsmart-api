@@ -1,0 +1,22 @@
+{
+	"eNodeBName": "eBE00202"
+	, "node": {
+		"nodeCode" : "BTE8202SRT01"
+	}
+	, "stationCode": "BTE8202"
+	, "interfacePort": "Gi0/0/3"
+	, "ipServiceEnodeb": "10.176.233.209"
+	, "ipServiceGateway": "10.176.233.208"
+	, "ipOamEnodeb": "10.176.233.210"
+	, "ipOamGateway": "10.176.233.214"
+	, "state": "UP"
+	, "rx": "-5.63"
+	, "tx": "-5.08"
+	, "crc": "0(-1)"
+	, "negotiation": "DISABLE"
+	, "speed": "1000"
+	, "duplex": "FULL"
+	, "module": "Vendor PN:, Vendor Name: HG GENUINE"
+	, "mac": "fh921-bi212-78dsd-ccdcd"
+	, "gian": "0"
+}
