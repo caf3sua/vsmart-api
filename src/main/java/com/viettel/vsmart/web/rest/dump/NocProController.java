@@ -50,4 +50,16 @@ public class NocProController {
     		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_WO, "nocProController_onSearchPowerViba");
         return data;
     }
+    
+    @RequestMapping(value = "/onGetStations", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String onGetStations(HttpServletRequest req,
+            @RequestParam("userAssignId") Long userAssignId,
+            @RequestParam("fromPage") Long fromPage,
+            @RequestParam("rowPage") Long rowPage,
+            @RequestParam("stationCode") String stationCode,
+            @RequestParam("token") String token) {
+    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_WO, "nocProController_onGetStations");
+        return data;
+    }
 }
