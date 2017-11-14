@@ -1,0 +1,1 @@
+{"formStation":{"Phân lớp":{"type":"Long","id":"1361","defaul":"-1","priority":"1","options":[{"id":"-1","name":"--Lựa chọn--"},{"id":"2661","name":"Trạm lớp trục"},{"id":"2662","name":"Trạm lớp lõi"},{"id":"2663","name":"Trạm lớp hội tụ"},{"id":"2664","name":"Trạm lớp truy nhập"}],"requied":1,"order":2}}}
