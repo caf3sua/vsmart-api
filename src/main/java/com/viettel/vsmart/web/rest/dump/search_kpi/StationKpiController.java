@@ -28,8 +28,8 @@ public class StationKpiController {
     // tra cứu trạng thái
     @RequestMapping(value = "/getState/online", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
     public @ResponseBody
-    String getStateOnline(HttpServletRequest req, @RequestParam("userService") String userService
-    		, @RequestParam("passService") String passService, @RequestParam("keyword") String keyword) {
+    String getStateOnline(HttpServletRequest req, @RequestParam(value = "userService", required=false) String userService
+    		, @RequestParam(value = "passService", required=false) String passService, @RequestParam("keyword") String keyword) {
     		if (!keyword.contains("eBE")) {
     			return "";
     		}
@@ -41,8 +41,8 @@ public class StationKpiController {
     // ping mme
     @RequestMapping(value = "/source", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
     public @ResponseBody
-    String source(HttpServletRequest req, @RequestParam("userService") String userService
-    		, @RequestParam("passService") String passService, @RequestParam("keyword") String keyword) {
+    String source(HttpServletRequest req, @RequestParam(value = "userService", required=false) String userService
+    		, @RequestParam(value = "passService", required=false) String passService, @RequestParam("keyword") String keyword) {
 	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_SEARCH_KPI, "stationKpiController_source");
 	    	return data;
     }
@@ -50,8 +50,8 @@ public class StationKpiController {
     // kiểm tra interface
     @RequestMapping(value = "/getConfigInterface", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
     public @ResponseBody
-    String getConfigInterface(HttpServletRequest req, @RequestParam("userService") String userService
-    		, @RequestParam("passService") String passService, @RequestParam("keyword") String keyword) {
+    String getConfigInterface(HttpServletRequest req, @RequestParam(value = "userService", required=false) String userService
+    		, @RequestParam(value = "passService", required=false) String passService, @RequestParam("keyword") String keyword) {
 	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_SEARCH_KPI, "stationKpiController_getConfigInterface");
 	    	return data;
     }
@@ -59,8 +59,8 @@ public class StationKpiController {
     // kiểm tra tích hợp
     @RequestMapping(value = "/getCheckList", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
     public @ResponseBody
-    String getCheckList(HttpServletRequest req, @RequestParam("userService") String userService
-    		, @RequestParam("passService") String passService, @RequestParam("keyword") String keyword) {
+    String getCheckList(HttpServletRequest req, @RequestParam(value = "userService", required=false) String userService
+    		, @RequestParam(value = "passService", required=false) String passService, @RequestParam("keyword") String keyword) {
 	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_SEARCH_KPI, "stationKpiController_getCheckList");
 	    	return data;
     }
