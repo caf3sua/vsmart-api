@@ -30,6 +30,10 @@ public class StationKpiController {
     public @ResponseBody
     String getStateOnline(HttpServletRequest req, @RequestParam("userService") String userService
     		, @RequestParam("passService") String passService, @RequestParam("keyword") String keyword) {
+    		if (!keyword.contains("eBE")) {
+    			return "";
+    		}
+    	
 	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_SEARCH_KPI, "stationKpiController_getStateOnline");
 	    	return data;
     }
