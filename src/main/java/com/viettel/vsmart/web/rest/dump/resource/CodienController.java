@@ -68,4 +68,32 @@ public class CodienController {
 	    	return data;
     }
     
+    @RequestMapping(value = "/insertInstanceVSmart", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String insertInstanceVSmart(HttpServletRequest req, @RequestParam("userAssignId") Long userAssignId,
+            @RequestParam("stationId") Long stationId,
+            @RequestParam("itemId") Long itemId,
+            @RequestParam("instanceName") String instanceName,
+            @RequestParam("listAttributeData") String listAttributeData,
+            @RequestParam("listRoles") String listRoles,
+            @RequestParam("vsmartPassword") String vsmartPassword,
+            @RequestParam("token") String token) {
+	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "codienController_insertInstanceVSmart");
+	    	return data;
+    }
+    
+    @RequestMapping(value = "/updateInstanceVSmart", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String updateInstanceVSmart(HttpServletRequest req, @RequestParam("userAssignId") Long userAssignId,
+            @RequestParam("stationId") Long stationId,
+            @RequestParam("itemId") Long itemId,
+            @RequestParam("instanceId") Long instanceId,
+            @RequestParam("instanceName") String instanceName,
+            @RequestParam("listRoles") String listRoles,
+            @RequestParam("listAttributeData") String listAttributeData,
+            @RequestParam("vsmartPassword") String vsmartPassword,
+            @RequestParam("token") String token) {
+	    	String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_RESOURCE, "codienController_updateInstanceVSmart");
+	    	return data;
+    }
 }

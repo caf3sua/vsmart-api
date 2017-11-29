@@ -48,6 +48,8 @@ public class AuthenController {
             data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_LOGIN, "login_qlctkt_kv1");
         }else if("namdh4".equals(username)){
             data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_LOGIN, "login_tms_caugiay");
+        }else if("hcm_q1".equals(username)){
+            data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_LOGIN, "login_hcm_q1");
         }else{
             data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_LOGIN, "login_namdh4");
         }
