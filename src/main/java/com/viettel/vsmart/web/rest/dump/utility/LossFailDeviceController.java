@@ -59,5 +59,4 @@ public class LossFailDeviceController {
 		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_UTILITY, "lossFailDeviceController_insertWOKTTS");
     		return data;
 	}
-	
 }
