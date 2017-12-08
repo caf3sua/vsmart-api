@@ -52,4 +52,40 @@ public class CouplingElectricDeviceController {
 		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_UTILITY, "couplingElectricDeviceController_getAssetComboInStationHouse");
 		return data;
 	}
+	
+	@RequestMapping(value = "/updateCombo", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String updateCombo(HttpServletRequest req,
+            @RequestParam("userAssignId") Long userAssignId,
+            @RequestParam("comboCode") String comboCode,
+            @RequestParam("description") String description,
+            @RequestParam("listSerial") String listSerial,
+            @RequestParam("token") String token) {
+		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_UTILITY, "couplingElectricDeviceController_updateCombo");
+		return data;
+	}
+	
+	@RequestMapping(value = "/insertCombo", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String insertCombo(HttpServletRequest req,
+            @RequestParam("userAssignId") Long userAssignId,
+            @RequestParam("description") String description,
+            @RequestParam("listSerial") String listSerial,
+            @RequestParam("merConfigId") Long merConfigId,
+            @RequestParam("stationHouseCode") String stationHouseCode,
+            @RequestParam("employeeCode") String employeeCode,
+            @RequestParam("token") String token) {
+		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_UTILITY, "couplingElectricDeviceController_insertCombo");
+		return data;
+	}
+	
+	@RequestMapping(value = "/deleteCombo", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+    public @ResponseBody
+    String deleteCombo(HttpServletRequest req,
+            @RequestParam("userAssignId") Long userAssignId,
+            @RequestParam("comboCode") String comboCode,
+            @RequestParam("token") String token) {
+		String data = LoadJsonDumpData.getGetJsonData(LoadJsonDumpData.MODULE_UTILITY, "couplingElectricDeviceController_deleteCombo");
+		return data;
+	}
 }
